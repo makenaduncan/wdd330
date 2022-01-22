@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Justice League</title>
+</head>
+<body>
+    <a href="index.html">Week 3 Notes</a>
+    <hr>
+    <header>
+        <h1 id='title'>Justice League</h1>
+    </header>
+    <ul id='roster'>
+        <li class='hero'>Superman</li>
+        <li class='vigilante hero' id='bats'>Batman</li>
+        <li class='hero'>Wonder Woman</li>
+    </ul>
+    <script>
+        const body = document.body; // allows access via variable
+        typeof body; // determine dataType
+        console.log(typeof body);
+        body.nodeType; //  should return 1 (element)
+        body.nodeName; 
+
+        document.images[
+        0]; // returns the first image in the node list 
+        const imageArray = Array.from(document.images); 
+        const h1 = document.getElementById('title'); 
+        console.log(h1);
+        const listItems = document.getElementsByTagName('li');
+        console.log(listItems); 
+        const heroes = document.getElementsByClassName('hero'); 
+        console.log(heroes.length); 
+        
+        // instead of document.getElementById()
+        document.querySelector('#bats');
+        // instead of document.getElementsByClassName
+        document.querySelectorAll('.hero');
+        const ul = document.querySelector('ul#roster');
+        const batman = ul.querySelector('li#bats'); // find a <li> element with an id of 'bats'
+        /*The childNodes property lists all of the nodes that are children of the node in action. The following code returns all
+          child nodes with an id of 'roster' */
+        const hero = document.getElementById('roster');
+        console.log(hero.childNodes);
+        
+        console.log(hero.children); // this will only contain list items -children property only returns anyelementnodes that are children of that node, so will ignore any text nodes
+        console.log(hero.firstChild); // #text  - same for hero.lastChild; 
+        const wonderWoman = document.querySelector('ul#roster li:last-child');
+        console.log(wonderWoman.parentNode); 
+        // wonderWoman.nextSibling or wonderWoman.previousSibling to move through the document
+
+        const textNode = wonderWoman.firstchild;
+        // textNode.nodeValue; // or use the .textContent to do the same thing wonderWoman.textContent
+
+        // getters and setters 
+        wonderWoman.getAttribute('class'); // .getAttribute()
+        wonderWoman.setAttribute('class', 'villain'); // .setAttribute(whichAttribute, changeTo)
+        wonderWoman.setAttribute('id','amazon');
+        wonderWoman.getAttribute('id'); // amazon
+        // .className to see and even change the class name BUT it will change them all AVOID by using classList (adds rather than overwriting)
+        wonderWoman.classList.add('warrior'); // remove doing the same wonderWoman.classList.remove('warrior');
+        wonderWoman.className; // hero warrior
+        
+        const flash = document.createElement('li'); // the line item is emptym but it is created
+        const flashText = document.createTextNode('Flash'); // creates the text for the element but they aren't linked
+        flash.appendChild(flashText); 
+*/
+        function createElement (tag,text) {
+        const el = document.createElement(tag);
+        el.textContent = text;
+        return el
+        }
+        const aquaman = createElement('li','Aquaman');
+        hero.appendChild(flash); // adds to the end of the elements in heroes
+        hero.insertBefore(aquaman,wonderWoman);
+       
+        // const h1 = document.getElementById('title');
+        const oldText = h1.firstChild;
+        const newText = document.createTextNode('Justice League of America');
+        h1.replaceChild(newText,oldText);
+        hero.innerHTML; // returns all the child elements as a string
+        h1.innerHTML = 'Suicide Squad'; // can enter raw html as a string
+        hero.innerHTML = '<li>Harley Quinn</li><li>Deadshot</li><li>Killer Croc</li><li>Enchantress</li><li>Captain Boomerang</li><li>Katana</li><li>Slipknot</li>';
+        // to use style (css) within accessing the dom
+        harleyQ = hero.children[0];
+        harleyQ.style.border = "red 2px solid";
+        // change css naming to camel case verses dash -> background-color becomes backgroundColor
+        harleyQ.style.backgroundColor = 'lightblue';
+        //  you can check or get computed style getComputedStyle(harleyQ).getPropertyCSSValue('color').cssText;
+    </script>
+</body>
+</html>
