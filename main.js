@@ -42,17 +42,3 @@ for (const item of links) {
     
     ol.appendChild(listitem);
 }
-
-// function createTable() {
-//     var list = document.getElementById(container)
-
-//     var li
-
-//     for (var i = 0; i < contentsList.length; i++); {
-//         li = document.createElement("li");
-//         li.appendChild(document.createTextNode(contentsList[i]))
-//         list.appendChild(li)
-//     }
-
-//     window.onload = createTable;
-// }
