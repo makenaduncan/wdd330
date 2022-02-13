@@ -16,15 +16,6 @@ h1{
     font-family: 'Roboto', sans-serif;;
 }
 
-/* a {
-    color: #000000;
-}
-
-ul {
-    list-style: none;
-    font-size: 1.5em;
-} */
-
 ol {
     list-style: none;
     font-size: 1.2em;
@@ -32,4 +23,5 @@ ol {
 
 li a {
     text-decoration: none;
+    color: #000000;
 }
