@@ -3,6 +3,31 @@ const contentsList = [
     {
         "label": "Week 1 Notes",
         "url": "week01/index.html"
+    },
+
+    {
+        "label": "Week 2 Notes",
+        "url": "week02/index.html"
+    },
+
+    {
+        "label": "Week 3 Notes",
+        "url": "week03/index.html"
+    },
+
+    {
+        "label": "Week 4 Notes",
+        "url": "week04/index.html"
+    },
+
+    {
+        "label": "Week 5 Notes",
+        "url": "week05/index.html"
+    },
+
+    {
+        "label": "Week 6 Notes",
+        "url": "week06/index.html"
     }
 ]
 

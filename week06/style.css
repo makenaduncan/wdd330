@@ -1,0 +1,98 @@
+html {
+    background-color: #a06c6a;
+    margin: 20px;
+}
+
+body {
+    background-color: #ebebeb;
+    padding: 10px;
+}
+
+h1 {
+    text-align: center;
+}
+
+.body-content {
+    border: solid 3px #a06c6a;
+    margin: 10px;
+    padding-bottom: 20px;
+}
+
+hr {
+    padding-bottom: 1px;
+    background-color: #a06c6a;
+}
+
+.container {
+    width: 100%;
+    padding: 15px;
+}
+
+ul.todo li .buttons button.complete svg {
+    border: 1.5px solid #4291af;
+}
+
+ul.todo li .buttons button.remove svg {
+    border: 1.5px solid #e85656;
+  }
+
+ul.todo#completed:before {
+    content: '';
+}
+
+ul.todo#completed li {
+    text-decoration: line-through;
+}
+
+ul.todo#todo:empty:after {
+    content: 'No todos available';
+}
+
+ul.todo#completed:empty:after {
+    content: 'No tasks completed';
+}
+
+ul.todo#todo:after,
+ul.todo#completed:after {
+  width: 100%;
+  display: block;
+  text-align: left;
+  font-size: 14px;
+  color: #a17c6b;
+}
+
+/* BUTTONS */
+
+.display {
+    background-color: #ebebeb;
+    font-size: 15px;
+}
+
+.display:first-child {
+    margin-left: 20px;
+}
+
+.display:hover {
+    background-color: #a17c6b;
+    color:#ebebeb;
+}
+
+/* FOOTER */
+
+footer input {
+    width: 90%;
+    height: 30px;
+    padding-left: 10px;
+    border: solid 1px #a06c6a;
+}
+
+footer button {
+    width: 30px;
+    height: 30px;
+    border:solid 1px #a06c6a;
+}
+
+footer {
+    padding: 10px;
+    padding-top: 200px;
+}
