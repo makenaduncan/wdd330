@@ -1,46 +1,58 @@
 // Portfolio Table of Contents
-const contentsList = [
+const links = [
     {
         "label": "Week 1 Notes",
-        "url": "week01/index.html"
+        "url": "../week01/index.html"
     },
 
     {
         "label": "Week 2 Notes",
-        "url": "week02/index.html"
+        "url": "../week02/index.html"
     },
 
     {
         "label": "Week 3 Notes",
-        "url": "week03/index.html"
+        "url": "../week03/index.html"
     },
 
     {
         "label": "Week 4 Notes",
-        "url": "week04/index.html"
+        "url": "../week04/index.html"
     },
 
     {
         "label": "Week 5 Notes",
-        "url": "week05/index.html"
+        "url": "../week05/index.html"
     },
 
     {
         "label": "Week 6 Notes",
-        "url": "week06/index.html"
+        "url": "../week06/index.html"
     }
-]
+];
 
-function createTable() {
-    var list = document.getElementById(container)
+const ol = document.querySelector("ol");
 
-    var li
-
-    for (var i = 0; i < contentsList.length; i++); {
-        li = document.createElement("li");
-        li.appendChild(document.createTextNode(contentsList[i]))
-        list.appendChild(li)
-    }
-
-    window.onload = createTable;
+for (const item of links) {
+    const listitem = document.createElement("li");
+    const link = document.createElement("a");
+    link.setAttribute("href", item.url);
+    link.textContent = item.label;
+    listitem.appendChild(link);
+    
+    ol.appendChild(listitem);
 }
+
+// function createTable() {
+//     var list = document.getElementById(container)
+
+//     var li
+
+//     for (var i = 0; i < contentsList.length; i++); {
+//         li = document.createElement("li");
+//         li.appendChild(document.createTextNode(contentsList[i]))
+//         list.appendChild(li)
+//     }
+
+//     window.onload = createTable;
+// }
