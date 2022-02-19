@@ -13,11 +13,40 @@
     <hr>
     <h4>Notes:</h4>
     <p>
-        
+        I learned a lot of new things from the reading this week. I don't know that i've ever used the .cache property. If I have, I don't remember. I found that one
+        pretty interesting. I included the example from the reading below so that I can remember it. The cache 
+        object is used to store things (like results).
+        <div class="example">
+            Example: <br><br>
+            function square(x){ <br>
+                &emsp;    square.cache = square.cache || {}; <br>
+                &emsp;    if (!square.cache[x]) { <br>
+                    &emsp;&emsp;        square.cache[x] = x*x; <br>
+                    &emsp;    } <br>
+                    &emsp;    return square.cache[x]<br>
+            }
+        </div>
+        Another function I learned about is IIFE. This is the one where you add parentheses immediately after a <em>function definition</em>.
+        Included with the IIFE function is temporary variables. I found this concept to be fascinating. It makes sense to include it because it
+        helps to prevent certain errors.
+        <div class="example">
+            Example: <br><br>
+            (function(){ <br>
+                const temp = 'World'; <br>
+                console.log(`Hello ${temp}`); <br>
+                })<b>()</b>; &emsp;//This is where the parentheses were added<br>  
+                << 'Hello World'
+        </div>
+        This reading helped me to see more ways that I can make my code efficient. I've always struggled to understand Javascript but I think 
+        I'm beginning to understand it a lot better. I think I'm going to find some old assignments and see where I can implement some of the new 
+        functions I learned about this week. 
+    </p>
+    <p>
+        <a href="ajax.html">Link to AJAX activity</a>
     </p>
     <h4>Questions:</h4>
     <p>
-        
+        I don't have any questions about the readings this week.
     </p>
 </body>
 </html>

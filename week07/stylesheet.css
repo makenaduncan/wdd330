@@ -7,3 +7,17 @@ body {
     padding: 3em;
     margin: 2em;
 }
+
+.example {
+    background-color: lightyellow;
+    padding: 5px;
+    padding-left: 5px;
+    margin: 50px;
+}
+
+#output {
+    background-color: lightyellow;
+    padding: 20px;
+    padding-left: 20px;
+    margin: 50px;
+}
