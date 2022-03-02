@@ -39,6 +39,11 @@ const links = [
         "label": "Week 8 Notes",
         "url": "./week08/index.html"
     },
+
+    {
+        "label": "Week 9 Notes",
+        "url": "./week09/index.html"
+    },
 ];
 
 const ol = document.querySelector("ol");
