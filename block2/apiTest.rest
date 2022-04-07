@@ -1,0 +1,7 @@
+GET http://www.boredapi.com/api/activity/
+
+###
+
+Get http://www.boredapi.com/api/activity?type=diy
+
+###
