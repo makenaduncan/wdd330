@@ -1,4 +1,6 @@
 /* Insert Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@300&family=Roboto:wght@500&family=Sansita+Swashed:wght@300&family=Varela+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lora&family=Nunito:wght@300&family=Roboto:wght@100;500&family=Sansita+Swashed:wght@300&family=Varela+Round&display=swap');
 
 /******************************************
 * General/Mobile
@@ -16,8 +18,13 @@ html {
     background-color: #ffffff;
 }
 
+body {
+    font-family: 'Roboto', sans-serif;
+}
+
 h1 {
     color: #006D77;
+    font-family: 'Sansita Swashed', sans-serif;
 }
 
 /* Navigation */
