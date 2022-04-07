@@ -16,7 +16,7 @@ html {
     background-color: #ffffff;
 }
 
-h2 {
+h1 {
     color: #006D77;
 }
 
@@ -74,8 +74,10 @@ li:hover {
 
 /* Page content */
 
+
 .options-menu {
     border: 5px solid #006D77;
+    padding-top: 20px;
     padding-bottom: 20px; 
     padding-right: 15px;
     padding-left: 15px;
@@ -83,20 +85,28 @@ li:hover {
 
 
 
-
-
 /******************************************
 * TEST
 ******************************************/
 
-.activity-cards div {
-    border: 3px solid green;
-    margin: 5px;
+.activity-cards {
+    display: grid;
+    grid-template-columns: 1fr;
 }
 
+.activity-cards div {
+    border: 3px solid #006D77;
+    background-color: #ffddd2;
+    padding: 30px;
+    height: 200px;
+    width: 200px;
+    margin: auto;
+    margin-bottom: 10px;
+}
 
-
-
+button {
+    margin: 2.7px;
+}
 
 /******************************************
 *  Large Screen
@@ -126,5 +136,40 @@ li:hover {
     .active-page {
         text-decoration: underline;
     }
+
+    .container {
+        display: flex;
+    }
+
+    .options-menu {
+        justify-content: left;
+        width: 40%;
+        height: 350px;
+        padding: 20px;
+        display: grid;
+        grid-template-columns: 150px 150px 150px;
+        justify-content: center;
+        /* margin-left: 150px; */
+        margin: auto;
+    }
+
+    .activity-cards {
+        display: grid;
+        grid-template-columns: 200px 200px 200px;
+        /* margin-left: 90px; */
+        margin: auto;
+    }
+
+    .activity-cards div {
+        height: 100px;
+        width: 100px;
+    }
+
+    button {
+        padding: 10px;
+        margin: 5px;
+        background-color: #ffddd2;
+    }
+    
 
 }
