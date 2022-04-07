@@ -180,24 +180,24 @@ const getRelaxActivity = (amount) => {
     }
 }
 
-const activityURL9 = apiURL + "?type=music";
+// const activityURL9 = apiURL + "?type=music";
 
-const getMusicActivity = (amount) => {
-    cards.innerHTML = "";
-    for(let i = 0; i < amount; i++){
-        fetch(activityURL9)
-            .then((response) => response.json())
-            .then((data) => {
+// const getMusicActivity = (amount) => {
+//     cards.innerHTML = "";
+//     for(let i = 0; i < amount; i++){
+//         fetch(activityURL9)
+//             .then((response) => response.json())
+//             .then((data) => {
                 
-                //  console.log('API loaded successfully');
-                 const card = document.createElement("div");
-                 card.innerHTML = data.activity
-                //  card.innerHTML = "";
-                 cards.appendChild(card);
-            });
+//                 //  console.log('API loaded successfully');
+//                  const card = document.createElement("div");
+//                  card.innerHTML = data.activity
+//                 //  card.innerHTML = "";
+//                  cards.appendChild(card);
+//             });
 
-    }
-}
+//     }
+// }
 
 
 button1.addEventListener("click", () => { 
@@ -225,7 +225,10 @@ button7.addEventListener("click", () => {
 button8.addEventListener("click", () => { 
     getRelaxActivity(6);
 })
-button9.addEventListener("click", () => { 
-    getMusicActivity(6);
-})
+// button9.addEventListener("click", () => { 
+//     getMusicActivity(6);
+// })
+
+
+
 

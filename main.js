@@ -44,6 +44,16 @@ const links = [
         "label": "Week 9 Notes",
         "url": "./week09/index.html"
     },
+
+    {
+        "label": "Week 10 Notes",
+        "url": "./week10/index.html"
+    },
+
+    {
+        "label": "Block 2 Project",
+        "url": "./block2/index.html"
+    },
 ];
 
 const ol = document.querySelector("ol");

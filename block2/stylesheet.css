@@ -108,6 +108,33 @@ button {
     margin: 2.7px;
 }
 
+button:hover {
+    background-color: #ffffff;
+}
+
+ul.todo#completed:before {
+    content: '';
+}
+
+ul.todo#completed li {
+    text-decoration: line-through;
+}
+
+ul.todo li .buttons button.complete svg {
+    border: 3px solid #4291af;
+}
+
+ul.todo li .buttons button.remove svg {
+    border: 3px solid #e85656;
+  }
+
+ul.todo li .buttons button.remove {
+    background-color: #ffffff;
+}
+
+ul.todo li .buttons button.complete {
+    background-color: #ffffff;
+}
 /******************************************
 *  Large Screen
 ******************************************/
