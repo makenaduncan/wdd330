@@ -1,0 +1,130 @@
+/* Insert Fonts */
+
+/******************************************
+* General/Mobile
+******************************************/
+
+html {
+    background-color: #006D77;
+}
+
+.jumbotron {
+    padding: 2em;
+    margin: 30px auto;
+    margin-left: 60px;
+    margin-right: 60px;
+    background-color: #ffffff;
+}
+
+h2 {
+    color: #006D77;
+}
+
+/* Navigation */
+
+nav {
+    margin: 0 auto;
+    max-width: 100%;
+    background-color: #E29578;
+}
+
+ul {
+    margin: 0;
+}
+
+.navigation {
+    list-style: none;
+    padding: 0;
+}
+
+.navigation li:first-child {
+    display: block;
+}
+
+.navigation li {
+    display: none;
+}
+
+li {
+    list-style: none;
+}
+
+.responsive li {
+    display: block;
+}
+
+li:hover {
+    background-color: #FFDDD2;
+}
+
+.navigation a {
+    display: block;
+    padding: .5em;
+    text-align: center;
+    text-decoration: none;
+    font-size: 1.3em;
+    color: #fff;
+    transition: 300ms;
+    margin-bottom: .3em;
+}
+
+#hamburger-icon {
+    padding-right: .5em;
+}
+
+/* Page content */
+
+.options-menu {
+    border: 5px solid #006D77;
+    padding-bottom: 20px; 
+    padding-right: 15px;
+    padding-left: 15px;
+}
+
+
+
+
+
+/******************************************
+* TEST
+******************************************/
+
+.activity-cards div {
+    border: 3px solid green;
+    margin: 5px;
+}
+
+
+
+
+
+/******************************************
+*  Large Screen
+******************************************/
+
+@media (min-width: 55em) {
+    /* navigation */
+    .navigation {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .navigation li {
+        display: block;
+    }
+
+    .navigation a {
+        text-align: center;
+        padding-left: 1em;
+        padding-right: 1em;
+    }
+
+    .navigation li:first-child {
+        display: none;
+    }
+
+    .active-page {
+        text-decoration: underline;
+    }
+
+}
